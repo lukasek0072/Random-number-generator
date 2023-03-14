@@ -1,7 +1,9 @@
 
-function Result() {
-    var max = document.getElementById("max").value;
-    console.log(max)
-    var number = Math.floor(Math.random() * max);
-    document.getElementById("result").innerHTML = number;
+
+function Generate() {
+    var rnd_input = document.getElementById("rnd_input").value;;
+    console.log(rnd_input);
+    var result = Math.floor(Math.random() * rnd_input);
+    console.log(result);
+    document.getElementById("rnd_result").innerHTML = result;
 }
